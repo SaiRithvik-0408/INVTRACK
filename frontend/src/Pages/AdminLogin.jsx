@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 import { axiosInstance } from '../axios';
 
 const AdminLogin = () => {
@@ -8,7 +8,7 @@ const AdminLogin = () => {
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
     const [loading, setLoading] = useState(false);
-    const navigate = useNavigate(); // Initialize useNavigate
+    const navigate = useNavigate(); 
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -18,7 +18,7 @@ const AdminLogin = () => {
         try {
             const response = await axiosInstance.post("/admin", { username, password }, { withCredentials: true });
             console.log('Admin logged in:', response.data);
-            navigate('/admin'); // Redirect to Admin page after successful login
+            navigate('/admin'); 
         } catch (error) {
             console.error('Login failed:', error);
             setErrorMessage('Invalid username or password');

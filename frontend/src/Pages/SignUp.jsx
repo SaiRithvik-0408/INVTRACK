@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { House } from "lucide-react";
 import { axiosInstance } from "../axios";
-import "../CSS/style.css"; // Import the CSS file
+import "../CSS/style.css"; 
 
 const SignUp = () => {
   const [formData, setFormData] = useState({

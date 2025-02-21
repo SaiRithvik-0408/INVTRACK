@@ -55,7 +55,7 @@ const Home = () => {
           </ul>
         </div>
 
-        <div className='testimonials'>
+        {/* <div className='testimonials'>
           <h1>Testimonials</h1>
           <div className='divider'></div>
           <blockquote>
@@ -66,7 +66,7 @@ const Home = () => {
             <p>"The real-time tracking saves us so much time and effort!"</p>
             <cite>– User B, Operations Manager</cite>
           </blockquote>
-        </div>
+        </div> */}
 
         <div className='faq'>
           <h1>FAQ</h1>

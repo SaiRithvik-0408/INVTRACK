@@ -3,7 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { IoIosLogOut } from "react-icons/io";
 import { axiosInstance } from "../axios";
 import Banner from "../assets/images/Banner.jpg";
-import "../CSS/Profile.css"; // Import the CSS file
+import "../CSS/Profile.css"; 
 
 const Profile = () => {
   const [userData, setUserData] = useState(null);
@@ -63,10 +63,8 @@ const Profile = () => {
               <span>{userData.phone}</span>
             </p>
           </div>
-
-        </div>
-      </div>
-      <div className="footer">
+          <br /><br /><br /><br /><br />
+          <div className="footer">
         <div className="inventory-section">
           <Link to={`/profile/${companyName}/inventory`}>Check out Your Inventory!</Link>
         </div>
@@ -75,6 +73,9 @@ const Profile = () => {
           <Link to="/">Back to Home</Link>
         </div>
       </div>
+        </div>
+      </div>
+      
     </div>
   );
 };

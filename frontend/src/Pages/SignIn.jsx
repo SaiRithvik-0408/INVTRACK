@@ -2,7 +2,7 @@ import { House } from "lucide-react";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { axiosInstance } from "../axios";
-import "../CSS/style.css"; // Import the CSS file
+import "../CSS/style.css"; 
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -14,9 +14,7 @@ const Login = () => {
     e.preventDefault();
     const loginData = { email, password };
     if (email === "admin@gmail.com" && password === "admin") {
-      // Store admin info if needed (no token)
       localStorage.setItem("user", JSON.stringify({ email, role: "admin" }));
-      
       alert("Admin login successful!");
       navigate("/admin");
       return;

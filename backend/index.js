@@ -1,5 +1,5 @@
 require('dotenv').config();
-const mongoose = require('mongoose');
+const mongoose = require('mongoose');  
 const express = require('express');
 const cors = require('cors');
 const userModel = require("./models/user");
@@ -610,7 +610,7 @@ app.get("/api/categories/:category/items", isLoggedIn, async (req, res) => {
     }
 });
 
-// -------- admin module
+// -------- Admin Module --------------
 
 app.post("/api/admin", async (req, res) => {
     let { username, password } = req.body;
