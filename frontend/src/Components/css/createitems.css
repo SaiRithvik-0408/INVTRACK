@@ -1,0 +1,109 @@
+.create-items-container {
+    width: 100%;
+    padding: 40px;
+    background: #f9fafb;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    border: 20px solid rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-items-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #124468;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.success-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    width: 100%;
+    justify-content: center;
+}
+
+.success-icon {
+    color: #46d876;
+}
+
+.create-items-form {
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.input-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #124468;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+}
+
+.input-field:focus {
+    border-color: #124468;
+    box-shadow: 0 0 5px rgba(18, 68, 104, 0.5);
+}
+
+.dropdown {
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    z-index: 10;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background: #124468;
+    color: white;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background: #124468;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    grid-column: span 2;
+}
+
+.submit-button:hover {
+    background: #0a2a3f;
+}

@@ -1,0 +1,102 @@
+.edit-inventory-container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.edit-inventory-title {
+  font-size: 6vh;
+  font-weight: bold;
+  color: #124462;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.inventory-list {
+  margin-top: 1.5rem;
+}
+
+.inventory-item {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-content {
+  flex-grow: 1;
+}
+
+.inventory-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.inventory-description {
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.inventory-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.inventory-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  border: 1px solid #555;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.edit-btn {
+  border-color: #2d6cdf;
+  color: #2d6cdf;
+}
+
+.edit-btn:hover {
+  background: #e0ebff;
+}
+
+.delete-btn {
+  border-color: #ff4d4d;
+  color: #ff4d4d;
+}
+
+.delete-btn:hover {
+  background: #ffe6e6;
+}
+
+.save-btn {
+  border-color: #0f9d58;
+  color: #0f9d58;
+}
+
+.save-btn:hover {
+  background: #e6f4ea;
+}
+
+.inventory-input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.no-inventory-message {
+  color: gray;
+  text-align: center;
+}

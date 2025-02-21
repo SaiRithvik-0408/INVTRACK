@@ -1,0 +1,93 @@
+/* Container */
+.create-inventory-container {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 16px;
+}
+
+/* Card */
+.create-inventory-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 32px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.create-inventory-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #124468;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Success Message */
+.success-message {
+    background: #d4edda;
+    border: 1px solid #155724;
+    color: #155724;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/* Form */
+.create-inventory-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Labels */
+.input-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #124468;
+}
+
+/* Input Fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+}
+
+.input-field:focus {
+    border-color: #124468;
+    box-shadow: 0 0 5px rgba(18, 68, 104, 0.5);
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Submit Button */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background: #124468;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-button:hover {
+    background: #0a2a3f;
+}

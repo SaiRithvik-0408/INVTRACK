@@ -1,0 +1,116 @@
+.user-records-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.user-records-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Table */
+.user-records-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f2f2f2;
+}
+
+.user-records-table thead {
+    background-color: #1f2937;
+    color: white;
+}
+
+.user-records-table th {
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0056b3;
+    border-bottom: 2px solid #ddd;
+}
+
+.user-records-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #374151;
+}
+
+.user-records-table tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Input Fields */
+.user-records-table input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.user-records-table .readonly-input {
+    background-color: #f3f4f6;
+    color: #6b7280;
+    cursor: not-allowed;
+}
+
+/* Buttons */
+.user-records-table button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Edit Button */
+.user-records-table button.edit {
+    background-color: #007bff;
+    color: white;
+}
+
+.user-records-table button.edit:hover {
+    background-color: #0056b3;
+}
+
+/* Save Button */
+.user-records-table button.save {
+    background-color: #28a745;
+    color: white;
+}
+
+.user-records-table button.save:hover {
+    background-color: #1e7e34;
+}
+
+/* Delete Button */
+.user-records-table button.delete {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 5px;
+}
+
+.user-records-table button.delete:hover {
+    background-color: #c12a36;
+}
+
+/* Cancel Button */
+.user-records-table button.cancel {
+    background-color: #6b7280;
+    color: white;
+}
+
+.user-records-table button.cancel:hover {
+    background-color: #4b5563;
+}

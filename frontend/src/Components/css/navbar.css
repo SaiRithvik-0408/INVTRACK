@@ -1,0 +1,76 @@
+.navbar {
+    background-color: #f4f4f4;
+    padding: 0rem 2.5rem;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 100px;
+    width: 200px;
+  }
+  
+  .logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+  }
+  
+  .nav-link {
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #124468;
+    text-decoration: underline;
+  }
+  
+  .auth-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .company-name {
+    font-size: 3vh;
+    font-weight: bold;
+    color: #124468;
+    padding: 0 2.5rem;
+    text-decoration: none;
+  }
+  
+  .auth-link {
+    padding: 0.5rem 1.5rem;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  
+  .mobile-menu-button {
+    display: none;
+  }
+  
+  .menu-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-icon svg {
+    color: #333;
+  }
+  
+  

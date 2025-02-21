@@ -1,0 +1,121 @@
+.inventory-container {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.back-button {
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: white;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+  background-color: #e5e7eb;
+}
+
+.inventory-header {
+  height: 30vh;
+  width: 100%;
+  background-color: #124462;
+  border-radius: 0.5rem;
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+}
+
+.inventory-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  border-radius: 0.5rem;
+}
+
+.inventory-details {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-title {
+  font-size: 8vh;
+  font-weight: 600;
+  color: #124468;
+}
+
+.inventory-subtitle {
+  font-size: 5vh;
+  color: #9ca3af;
+}
+
+.inventory-description {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.inventory-table th,
+.inventory-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.inventory-table th {
+  background-color: #124468;
+  color: white;
+}
+
+.inventory-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.summary-section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+}
+
+.summary-section h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #124468;
+  margin-bottom: 0.75rem;
+}
+
+.summary-section p {
+  font-size: 1.125rem;
+  color: #374151;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .inventory-title {
+    font-size: 5vh;
+  }
+  .inventory-subtitle {
+    font-size: 3vh;
+  }
+}

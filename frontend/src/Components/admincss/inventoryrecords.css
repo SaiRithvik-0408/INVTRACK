@@ -1,0 +1,125 @@
+/* Container */
+.inventory-admin-container {
+    width: 90%;
+    min-height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.inventory-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Table */
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f2f2f2;
+}
+
+/* Table Header */
+.inventory-table thead {
+    background-color: transparent;
+}
+
+.inventory-table th {
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0056b3;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Table Rows */
+.inventory-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #374151;
+}
+
+/* Hover Effect */
+.inventory-table tbody tr:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Input Fields */
+.input-field {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Readonly Input */
+.readonly-input {
+    background-color: #f3f4f6;
+    color: #6b7280;
+    cursor: not-allowed;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+/* Buttons */
+.button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button.edit {
+    background-color: #007bff;
+    color: white;
+}
+
+.button.edit:hover {
+    background-color: #0056b3;
+}
+
+.button.delete {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 5px;
+}
+
+.button.delete:hover {
+    background-color: #c12a36;
+}
+
+.button.save {
+    background-color: #28a745;
+    color: white;
+}
+
+.button.save:hover {
+    background-color: #1e7e34;
+}
+
+/* Cancel Button */
+.button.cancel {
+    background-color: #6b7280;
+    color: white;
+}
+
+.button.cancel:hover {
+    background-color: #4b5563;
+}
