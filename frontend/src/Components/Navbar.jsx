@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="nav-links">
           <Link to={companyName ? `/profile/${companyName}/dashboard` : '/signin'} className="nav-link">Dashboard</Link>
           <Link to={companyName ? `/profile/${companyName}/inventory` : '/signin'} className="nav-link">Inventory</Link>
-          <Link to={companyName ? "/categories" : "/signin"} className="nav-link">Categories</Link>
+          {/* <Link to={companyName ? "/categories" : "/signin"} className="nav-link">Categories</Link> */}
           <Link to="/contact" className="nav-link">Contact Us</Link>
         </div>
 

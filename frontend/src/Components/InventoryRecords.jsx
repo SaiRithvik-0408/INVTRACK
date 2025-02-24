@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { axiosInstance } from '../axios';
-import './admincss/inventoryrecords.css'; // Import the CSS file
+import './admincss/inventoryrecords.css'; 
 
 const InventoryRecords = () => {
     const [inventories, setInventories] = useState([]);

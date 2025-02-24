@@ -105,8 +105,8 @@ const UserRecords = () => {
                                     <td>{user.email}</td>
                                     <td>{user.phone}</td>
                                     <td>
-                                        <button onClick={() => editUser(user)}>Edit</button>
-                                        <button onClick={() => deleteUser(user._id)}>Delete</button>
+                                        <button className="button edit" onClick={() => editUser(user)}>Edit</button>
+                                        <button onClick={() => deleteUser(user._id) } className="button delete">Delete</button>
                                     </td>
                                 </>
                             )}

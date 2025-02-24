@@ -13,7 +13,7 @@ const Categories = () => {
         const fetchCategories = async () => {
             try {
                 const response = await axiosInstance.get('/categories', { withCredentials: true });
-                console.log(response.data.categories); // Log the categories
+                console.log(response.data.categories); 
                 setCategories(response.data.categories);
             } catch (error) {
                 console.error('Error fetching categories:', error);

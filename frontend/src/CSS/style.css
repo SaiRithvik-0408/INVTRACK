@@ -16,7 +16,7 @@
 
 .home-banner img {
   width: 100%;
-  height: 100vh;
+  height: auto;
   object-fit: cover;
   margin-top: 20px;
 }
@@ -36,17 +36,21 @@
   background-color: black;
   margin-bottom: 20px;
 }
+.divider p{
+  padding: 5%;
+  font-size: 3vh;
+}
 
 .feature {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 10%;
   margin-bottom: 40px;
 }
 
 .feature.reverse {
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 .feature p {
@@ -55,7 +59,7 @@
 }
 
 .feature img {
-  width: 50%;
+  width: 30%;
   height: auto;
   object-fit: cover;
 }
@@ -66,7 +70,7 @@
   font-size: 3vh;
 }
 
-.testimonials blockquote {
+/* .testimonials blockquote {
   text-align: center;
   background: white;
   padding: 20px;
@@ -80,7 +84,7 @@
   margin-top: 10px;
   font-size: 2vh;
   color: gray;
-}
+} */
 
 .faq details {
   background: white;
@@ -267,14 +271,19 @@ button:active {
 
 
 /* contactcss */
+
 .contact-container {
     min-height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
+    flex-direction: column;
     background-color: #f3f4f6;
   }
+.contact-container-inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7%;
+}
   
   .contact-box {
     width: 100%;

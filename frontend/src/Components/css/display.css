@@ -145,3 +145,26 @@ tr {
   background-color: #71717a;
   margin-top: 1rem;
 }
+
+/* footer css */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  margin: 0;
+  font-weight: 400;
+}

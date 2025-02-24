@@ -64,7 +64,7 @@ const Profile = () => {
             </p>
           </div>
           <br /><br /><br /><br /><br />
-          <div className="footer">
+          <div className="footer-profile">
         <div className="inventory-section">
           <Link to={`/profile/${companyName}/inventory`}>Check out Your Inventory!</Link>
         </div>

@@ -21,9 +21,14 @@ const Home = () => {
         <div className='about-section'>
           <h1>About Us</h1>
           <div className='divider'></div>
-          <p>
-            InvTrack is driven by a commitment to revolutionize inventory management. Our platform combines
-            advanced technology with user-friendly design to help industries effectively monitor their products and assets.
+          <p style={{ fontSize: "3vh"}}>
+            InvTrack is driven by a commitment to revolutionizing inventory management by providing a cutting-edge, efficient, and intuitive solution for businesses of all sizes. Our platform integrates advanced technology, including real-time tracking, automation, and data analytics, with a user-friendly design that simplifies complex inventory processes. 
+          </p>
+          <p style={{ fontSize: "3vh" }}> 
+            With InvTrack, industries can efficiently monitor their products and assets, reduce manual errors, optimize stock levels, and gain valuable insights into inventory trends. Whether managing warehouses, retail stores, or supply chains, our comprehensive system ensures seamless inventory control, improved operational efficiency, and cost savings.  
+          </p>
+          <p style={{ fontSize: "3vh" }}>
+            By leveraging cloud-based solutions and AI-powered analytics, InvTrack empowers businesses to make data-driven decisions, prevent stock shortages or overages, and enhance overall productivity. Our commitment to innovation and customer success makes InvTrack the ultimate choice for modern inventory management.
           </p>
         </div>
 

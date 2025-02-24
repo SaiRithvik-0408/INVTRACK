@@ -73,12 +73,3 @@
 
 .button.edit { background-color: #007bff; color: white; }
 .button.edit:hover { background-color: #0056b3; }
-
-.button.delete { background-color: #dc3545; color: white; }
-.button.delete:hover { background-color: #c12a36; }
-
-.button.save { background-color: #28a745; color: white; }
-.button.save:hover { background-color: #1e7e34; }
-
-.button.cancel { background-color: #6b7280; color: white; }
-.button.cancel:hover { background-color: #4b5563; }
