@@ -1,56 +1,151 @@
+/* Fade-in animation for the container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .update-inventory-container {
     padding: 20px;
     font-family: Arial, sans-serif;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-in-out;
 }
 
+/* Title Styling */
 .title {
     font-size: 6vh;
     color: #124462;
     margin-bottom: 20px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
 }
 
+/* Inventory Select Dropdown */
 .inventory-select {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding: 10px;
     border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    transition: box-shadow 0.3s ease;
 }
 
+/* Add a focus effect */
+.inventory-select:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(18, 68, 98, 0.3);
+}
+
+/* Subtitle Styling */
 .sub-title {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 0.9s ease-in-out forwards;
+}
+
+/* Table Slide-in Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .item-table {
     width: 100%;
     border-collapse: collapse;
-    border: 1px solid gray;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    opacity: 0;
+    animation: slideIn 0.8s ease-in-out forwards;
 }
 
 .item-table th, .item-table td {
     border: 1px solid gray;
-    padding: 8px;
+    padding: 10px;
     text-align: center;
 }
 
+.item-table th {
+    background: #124462;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Button Group */
 .button-group {
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-top: 10px;
+}
+
+/* Button Animation */
+@keyframes buttonPop {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .edit-button, .delete-button, .save-button {
-    padding: 5px 10px;
-    border: 1px solid #666;
-    background: transparent;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    opacity: 0;
+    animation: buttonPop 0.7s ease-in-out forwards;
 }
 
+.edit-button {
+    background: #2d89ef;
+    color: white;
+}
+
+.delete-button {
+    background: #d9534f;
+    color: white;
+}
+
+.save-button {
+    background: #5cb85c;
+    color: white;
+}
+
+/* Button Hover Effect */
 .edit-button:hover, .delete-button:hover, .save-button:hover {
-    background-color: #ddd;
+    transform: scale(1.1);
+    opacity: 0.9;
 }
 
+/* Empty Item Message */
 .no-items {
     margin-left: 10px;
+    font-style: italic;
+    color: #555;
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in-out forwards;
 }

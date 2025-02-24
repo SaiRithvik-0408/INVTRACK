@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import Poster1 from '../assets/images/InvTrack_Poster1.png';
@@ -8,9 +8,33 @@ import Poster4 from '../assets/images/admin.png';
 import '../CSS/style.css';
 
 const Home = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <div>
-      <Navbar />
+      <div className='navbar-fixed'>
+        <Navbar />
+      </div>
       <div className='home-container'>
         <div className='home-header'>
           <h1>Effortlessly Manage and Optimize<br />Your Inventory.</h1>
@@ -52,7 +76,7 @@ const Home = () => {
         <div className='why-choose-us'>
           <h1>Why Choose Us?</h1>
           <div className='divider'></div>
-          <ul >
+          <ul>
             <li>Real-Time Data Sync</li>
             <li>Advanced Analytics</li>
             <li>Intuitive Design</li>
@@ -60,7 +84,9 @@ const Home = () => {
           </ul>
         </div>
 
-        {/* <div className='testimonials'>
+        {/* Testimonials Section (Commented Out) */}
+        {/*
+        <div className='testimonials'>
           <h1>Testimonials</h1>
           <div className='divider'></div>
           <blockquote>
@@ -71,7 +97,8 @@ const Home = () => {
             <p>"The real-time tracking saves us so much time and effort!"</p>
             <cite>– User B, Operations Manager</cite>
           </blockquote>
-        </div> */}
+        </div>
+        */}
 
         <div className='faq'>
           <h1>FAQ</h1>
@@ -90,6 +117,14 @@ const Home = () => {
           </details>
         </div>
       </div>
+
+      {/* Back to Top Button */}
+      {showButton && (
+        <button className="back-to-top" onClick={scrollToTop}>
+          ↑
+        </button>
+      )}
+
       <Footer />
     </div>
   );

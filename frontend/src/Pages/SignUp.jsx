@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { House } from "lucide-react";
 import { axiosInstance } from "../axios";
-import "../CSS/style.css"; 
+import "../CSS/signup.css"; 
+import signup from '../assets/images/signup.jpeg';
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -36,6 +37,7 @@ const SignUp = () => {
       <div className="signup-left">
         <div className="home-icon">
           <Link to="/"> <House size={28} color="#ffffff" /> </Link>
+          {/* <img src={signup} alt="Sign up bg" /> */}
         </div>
         <h1>Welcome to IMS</h1>
         <p>Manage your inventory efficiently with our powerful software solution. Sign up today and take control of your inventory management.</p>
@@ -43,7 +45,8 @@ const SignUp = () => {
       <div className="signup-right">
         <h2>Create an Account</h2>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="form-signup">
+          <div className="form-content">
           <label htmlFor="companyName">Company Name</label>
           <input type="text" id="companyName" name="companyName" value={formData.companyName} onChange={handleChange} required />
 
@@ -55,10 +58,11 @@ const SignUp = () => {
 
           <label htmlFor="phone">Phone Number</label>
           <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} required />
-          <br /><br />
+          <br></br>
+          <label><p>Already a user? <Link to="/signin" className="signin-link">Sign In</Link></p></label>
           <button type="submit">Sign Up</button>
+          </div>
         </form>
-        <p>Already a user? <Link to="/signin" className="signin-link">Sign In</Link></p>
       </div>
     </div>
   );

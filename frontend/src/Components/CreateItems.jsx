@@ -75,6 +75,7 @@ const CreateItems = ({ inventoryId }) => {
 
     return (
         <div className="create-items-container">
+            <div className='create-items-container-content'>
             <h2 className="create-items-title">Add New Item</h2>
 
             {alertMessage && (
@@ -145,9 +146,9 @@ const CreateItems = ({ inventoryId }) => {
                         onFocus={() => setShowCategoryDropdown(true)}
                     />
                     {showCategoryDropdown && filteredCategories.length > 0 && (
-                        <div className="dropdown">
+                        <div className="dropdownd">
                             {filteredCategories.map((category, index) => (
-                                <div key={index} onClick={() => handleCategorySelect(category)} className="dropdown-item">
+                                <div key={index} onClick={() => handleCategorySelect(category)} className="dropdownd-item">
                                     {category}
                                 </div>
                             ))}
@@ -175,6 +176,7 @@ const CreateItems = ({ inventoryId }) => {
 
                 <button type="submit" className="submit-button">Add Item</button>
             </form>
+        </div>
         </div>
     );
 };

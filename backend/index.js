@@ -10,6 +10,9 @@ const cookieParser = require('cookie-parser');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const path = require("path");
+// const Token = require('./models/token');
+// const sendEmail = require('../frontend/src/Pages/SendEmail');
+// const crypto = require('crypto');
 
 const app = express();
 
