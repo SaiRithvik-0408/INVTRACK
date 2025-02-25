@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import debounce from 'lodash.debounce'; 
+import { Search } from 'lucide-react';  // Import the search icon
 import { axiosInstance } from '../axios';
 import './css/searchbar.css'; // Import the CSS file
 
@@ -41,14 +42,20 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="search-bar">
-      <input
-        type="text"
-        value={searchTerm}
-        onChange={handleChange}
-        placeholder="Search for items, inventories or categories..."
-        className="search-input"
-      />
+    <div className="search-bar relative">
+      {/* Search Input with Icon */}
+      <div className="relative w-full">
+        <input
+          type="text"
+          value={searchTerm}
+          onChange={handleChange}
+          placeholder="Search for items, inventories or categories..."
+          className="search-input pl-10"
+        />
+        {/* Search Icon */}
+        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" size={20} />
+      </div>
+
       {searchTerm && (
         <ul className="suggestions-list">
           {suggestions.length > 0 ? (

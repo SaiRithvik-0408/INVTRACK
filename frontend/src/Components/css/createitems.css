@@ -3,7 +3,7 @@
         background: #fff;
     }
     to {
-        background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+        background: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
     }
 }
 
@@ -37,7 +37,7 @@
 /* Hover effect */
 .create-items-container-content:hover {
     transform: scale(1.02);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.34);
 }
 
 /* Responsive Design */

@@ -47,7 +47,7 @@ const InventoryNav = () => {
             <SearchBar />
             <Link to="/" className='hover:underline'>Home</Link>
             <Link to={`/profile/${companyName}`} className='hover:underline'>{companyName || 'Loading...'}</Link> 
-            <button className='hover:underline' onClick={toggleSidebar}><AlignJustify size={28} color="#ffffff" /></button>
+            <button className='hover:underline w-[10px]' onClick={toggleSidebar}><AlignJustify size={28} color="#ffffff" /></button>
           </div>
         </div>
       </div>
