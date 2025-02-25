@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "axios": "^1.7.7",
     "lodash.debounce": "^4.0.8",
     "lucide-react": "^0.455.0",
