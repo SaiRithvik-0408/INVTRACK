@@ -39,28 +39,31 @@ const Profile = () => {
       </div>
 
       <div className="profile-content">
-        <h1 className="profile-title">Welcome, {userData.companyName}!</h1>
+            
         <div className="profile-info">
-          <div className="profile-header">
-            <h1>Company Information</h1>
             <Link to="/logout" className="logout-link">
               <IoIosLogOut />
               <span>Log Out</span>
             </Link>
+        <h1 className="profile-title">Welcome, {userData.companyName}!</h1>
+        <br /><br /><br />
+          <div className="profile-header">
+            <h1>Company Information</h1>
+            
           </div>
 
           <div className="profile-details">
             <p>
-              <strong>Company Name</strong>
-              <span>{userData.companyName}</span>
+              <strong>Company Name : </strong>
+              <strong>{userData.companyName}</strong>
             </p>
             <p>
-              <strong>Company Email</strong>
-              <span>{userData.email}</span>
+              <strong>Company Email : </strong>
+              <strong>{userData.email}</strong>
             </p>
             <p>
-              <strong>Phone</strong>
-              <span>{userData.phone}</span>
+              <strong>Phone : </strong>
+              <strong>{userData.phone}</strong>
             </p>
           </div>
           <br /><br /><br /><br /><br />
