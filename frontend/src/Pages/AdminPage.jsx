@@ -7,7 +7,7 @@ import axios from 'axios';
 import { axiosInstance } from '../axios';
 
 const AdminPage = () => {
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true); 
     const [isAdmin, setIsAdmin] = useState(false);
     const navigate = useNavigate();
 
