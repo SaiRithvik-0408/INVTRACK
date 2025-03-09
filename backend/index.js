@@ -92,7 +92,7 @@ app.post("/api/login", async function (req, res) {
 app.get("/api/profile/:companyName", isLoggedIn, async function (req, res) {
     let { email, userid } = req.user;
     let userData = await userModel.findOne({ email });
-    res.send(userData);
+    res.send(userData);;
 });
 
 app.post("/api/create/inventory", isLoggedIn, async function (req, res) {
